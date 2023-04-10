@@ -1,4 +1,4 @@
-/// <reference path="index.d.ts" />
+/// <reference path="../index.d.ts" />
 import Clipboard from "@react-native-community/clipboard";
 import {
   InputProps,
@@ -14,9 +14,9 @@ import {
   TouchableWithoutFeedback,
   View,
 } from "react-native";
-import { codeToArray } from "./helpers/codeToArray";
-import { isAutoFillSupported } from "./helpers/device";
-import styles from "./styles";
+import { codeToArray } from "../helpers/codeToArray";
+import { isAutoFillSupported } from "../helpers/device";
+import styles from "../styles";
 
 export default class OTPInputView extends Component<
   InputProps,
@@ -210,6 +210,8 @@ export default class OTPInputView extends Component<
 
   clearAll() {
     this.clearAllFields();
+    this.focusField(0);
+    this.fields.forEach((_filed, index) => this.fields[index]?.clear());
   }
 
   renderOneInputField = (_: TextInput, index: number) => {
