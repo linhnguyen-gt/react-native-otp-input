@@ -209,9 +209,9 @@ export default class OTPInputView extends Component<
   };
 
   clearAll() {
-    this.clearAllFields();
-    this.fields.forEach((_filed, index) => this.fields[index]?.clear());
+    this.setState({ digits: [], selectedIndex: 0 });
     this.focusField(0);
+    this.fields.forEach((_filed, index) => this.fields[index]?.clear());
   }
 
   renderOneInputField = (_: TextInput, index: number) => {
