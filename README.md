@@ -28,9 +28,9 @@ or
 ### NOTES: 
 From version 1.3.10: We use @react-native-community/clipboard to handle the clipboard in this package, So you should install @react-native-community/clipboard
 
-`npm install --save @react-native-community/clipboard`
+`npm install --save @react-native-clipboard/clipboard`
 or
-`yarn add @react-native-community/clipboard`
+`yarn add @react-native-clipboard/clipboard`
 
 ## Basic Usage
 

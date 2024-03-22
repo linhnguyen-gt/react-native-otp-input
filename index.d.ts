@@ -2,7 +2,7 @@
  * created by: Eric Dao, Becky Wu from TTTStudios
  */
 
-declare module "@twotalltotems/react-native-otp-input" {
+declare module "react-native-otp-input/otpInput" {
   import * as React from "react";
   import { TextStyle, ViewStyle } from "react-native";
 
@@ -93,8 +93,8 @@ declare module "@twotalltotems/react-native-otp-input" {
   }
 
   export default class OTPInputView extends React.Component<
-    InputProps,
-    OTPInputViewState
+      InputProps,
+      OTPInputViewState
   > {
     clearAll(): void;
   }
