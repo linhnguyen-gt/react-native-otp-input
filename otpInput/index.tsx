@@ -14,9 +14,9 @@ import {codeToArray} from "../helpers/codeToArray";
 import {isAutoFillSupported} from "../helpers/device";
 import styles from "../styles";
 import Clipboard from "@react-native-clipboard/clipboard";
-import {InputProps, OTPInputViewState} from "react-native-otp-input/otpInput";
+import {InputProps, OTPInputViewState} from "react-native-otp-input";
 
-export default class OTPInputView extends Component<
+class OTPInputView extends Component<
     InputProps,
     OTPInputViewState
 > {
@@ -312,3 +312,5 @@ export default class OTPInputView extends Component<
         );
     }
 }
+
+export default OTPInputView

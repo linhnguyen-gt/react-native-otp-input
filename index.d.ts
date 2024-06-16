@@ -2,7 +2,7 @@
  * created by: Eric Dao, Becky Wu from TTTStudios
  */
 
-declare module "react-native-otp-input/otpInput" {
+declare module "react-native-otp-input" {
   import * as React from "react";
   import { TextStyle, ViewStyle } from "react-native";
 

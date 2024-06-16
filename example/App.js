@@ -9,8 +9,8 @@
 
 import React from 'react'
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native'
+import OTPInputView from "react-native-otp-input";
 
-import OTPInputView from '@twotalltotems/react-native-otp-input'
 
 export default class App extends React.Component {
   state = {
@@ -20,7 +20,7 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <TouchableOpacity style={{marginTop: 30}} onPress={() => { this.setState({code: ""})}}> 
+        <TouchableOpacity style={{marginTop: 30}} onPress={() => { this.setState({code: ""})}}>
           <Text>Resend</Text>
         </TouchableOpacity>
 
